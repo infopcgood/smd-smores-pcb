@@ -4185,6 +4185,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 105.41) (xy 139.7 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25596b95-e666-4486-92e7-172dfa4f8d20")
+	)
+	(wire
+		(pts
 			(xy 137.16 73.66) (xy 144.78 73.66)
 		)
 		(stroke
@@ -5112,29 +5122,6 @@
 			)
 		)
 	)
-	(global_label "BLED"
-		(shape input)
-		(at 125.73 105.41 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left)
-		)
-		(uuid "16cb27ea-9dcc-4138-9b6e-b109f71dbbdc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 133.4323 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SDX"
 		(shape input)
 		(at 307.34 52.07 0)
@@ -5172,28 +5159,6 @@
 		(uuid "19b6e69c-87ca-41ca-831c-c6792fb084c3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 179.411 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RESET"
-		(shape input)
-		(at 59.69 173.99 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1f851dad-3618-4f18-9357-de60677a86a0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 50.9597 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5978,28 +5943,6 @@
 			)
 		)
 	)
-	(global_label "VDD_NRF"
-		(shape input)
-		(at 92.71 59.69 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cfe88310-172d-4bdd-90c1-862b31b2d27a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.71 48.4195 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "3V3"
 		(shape input)
 		(at 327.66 46.99 90)
@@ -6146,6 +6089,28 @@
 		(uuid "eb554272-736b-452d-8c32-25f858b46645")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 245.11 18.9072 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD_NRF"
+		(shape input)
+		(at 92.71 59.69 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f0e2b25c-68ea-43c7-b10d-35aaadac40dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.71 48.4195 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7217,6 +7182,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 139.7 120.65 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a266ff6-080f-4cb2-86d7-f7486dc21b66")
+		(property "Reference" "#PWR030"
+			(at 139.7 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 139.7 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83e44bd9-c241-4f5f-90f4-674f9495c6cf")
+		)
+		(instances
+			(project "smd-smores-pcb"
+				(path "/496e661b-dfd3-4b8a-a125-26ec39d316c4"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 139.7 262.89 0)
 		(unit 1)
@@ -7597,7 +7629,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 99.06 261.62 0)
 			(effects
 				(font
@@ -8008,7 +8040,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 114.3 53.34 0)
 			(effects
 				(font
@@ -8628,7 +8660,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 109.22 59.69 0)
 			(effects
 				(font
@@ -8698,7 +8730,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 53.34 130.81 0)
 			(effects
 				(font
@@ -9039,7 +9071,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 54.61 85.09 0)
 			(effects
 				(font
@@ -9514,7 +9546,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 106.68 53.34 0)
 			(effects
 				(font
@@ -10451,6 +10483,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 139.7 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b018bba5-1167-420e-bcb1-11298f7e322b")
+		(property "Reference" "D2"
+			(at 146.05 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_BLUE"
+			(at 143.51 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+			(at 139.7 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 139.7 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 139.7 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "11100020-096d-4370-9b62-8cbba4da6ac8")
+		)
+		(pin "1"
+			(uuid "db02048d-c914-4519-b791-6189a5f5f7c2")
+		)
+		(instances
+			(project "smd-smores-pcb"
+				(path "/496e661b-dfd3-4b8a-a125-26ec39d316c4"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Crystal")
 		(at 137.16 68.58 270)
 		(unit 1)
@@ -10478,7 +10586,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm"
 			(at 137.16 68.58 0)
 			(effects
 				(font
@@ -11111,6 +11219,76 @@
 			(project "smd-smores-pcb"
 				(path "/496e661b-dfd3-4b8a-a125-26ec39d316c4"
 					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 139.7 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3075e3c-385f-420f-a07f-54627dcb6521")
+		(property "Reference" "R11"
+			(at 142.24 115.5699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 142.24 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 137.922 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 139.7 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7be36808-ff79-4420-a060-82d742d39038")
+		)
+		(pin "2"
+			(uuid "19b84f86-1f31-4e84-a551-5443ff5eef04")
+		)
+		(instances
+			(project "smd-smores-pcb"
+				(path "/496e661b-dfd3-4b8a-a125-26ec39d316c4"
+					(reference "R11")
 					(unit 1)
 				)
 			)
